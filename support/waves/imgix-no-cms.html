@@ -22,7 +22,16 @@
     <meta property="ix:useHttps" content="true">
 
     <!-- imgix  -->
-    <script src="./imgix-no-cms_files/imgix361.min.js.download"></script>
+    <script src="./imgix-no-cms_files/imgix361.min.js.download">
+       
+        imgix.config.srcAttribute = 'data-src';
+        imgix.config.srcsetAttribute = 'data-srcset';
+        imgix.config.sizesAttribute = 'data-sizes';
+        imgix.config.defaultParams = {
+              auto: 'format,compress',
+              fit: 'max'
+        }
+      </script>
     <script src="./imgix-no-cms_files/lazysizes.min.js.download"></script>
     <script>
         (function () {

@@ -16,26 +16,18 @@
         }
     </style>
     
-
-    <meta property="ix:srcAttribute" content="data-src">
-    <meta property="ix:srcsetAttribute" content="data-srcset">
-    <meta property="ix:sizesAttribute" content="data-sizes">
-    
-    <meta property="ix:host" content="media.wavescdn.com">
-    <meta property="ix:useHttps" content="true">
-    <script src="./imgix-no-cms_files/imgix361.min.js.download"></script>
+    <script src="./imgix-no-cms_files/imgix361.min.js.download">
+       
+        imgix.config.srcAttribute = 'data-src';
+        imgix.config.srcsetAttribute = 'data-srcset';
+        imgix.config.sizesAttribute = 'data-sizes';
+        imgix.config.host = 'media.wavescdn.com';
+        imgix.config.defaultParams = {
+              auto: 'format,compress',
+              fit: 'max'
+        }
+      </script>
     <script src="./imgix-no-cms_files/lazysizes.min.js.download"></script>
-    <script>
-        (function () {
-            'use strict';
-            if (window.imgix && window.imgix.config) {
-                window.imgix.config.defaultParams = {
-                    auto: 'format,compress',
-                    fit: 'max'
-                };
-            }
-        })();
-    </script>
     
     
     <!-- imgix  -->
@@ -47,22 +39,22 @@
 
             <img class="waves-img lazyload" width="200px" title="Sound Design Design Competition 2011"
                 alt="Sound Design Design Competition 2011"
-                ix-path="/images/blog/1280/2011/sound-deisgn-competition-2011.jpg" ix-sizes="auto" sizes="780px">
+                ix-src="http://media.wavescdn.com//images/blog/1280/2011/sound-deisgn-competition-2011.jpg" ix-sizes="auto" sizes="780px">
         </div>
         <div>
             <img class="waves-img lazyload" title="Sound Design Design Competition 2011"
                 alt="Sound Design Design Competition 2011"
-                ix-path="/images/blog/1280/2011/sound-deisgn-competition-2011.jpg"
+                ix-src="http://media.wavescdn.com//images/blog/1280/2011/sound-deisgn-competition-2011.jpg"
                 sizes="(min-width: 780px) 780px, 100vw">
         </div>
         <div>
             <img class="waves-img lazyload ls-is-cached" title="Sound Design Design Competition 2011"
-                alt="Sound Design Design Competition 2011" ix-path="/images/products/plugins/full/api-560.jpg"
+                alt="Sound Design Design Competition 2011" ix-src="http://media.wavescdn.com//images/products/plugins/full/api-560.jpg"
                 sizes="(min-width: 780px) 780px, 100vw">
         </div>
         <div>
             <img class="waves-img lazyload" title="Sound Design Design Competition 2011"
-                alt="Sound Design Design Competition 2011" ix-path="/images/products/plugins/full/api-560.jpg"
+                alt="Sound Design Design Competition 2011" ix-src="http://media.wavescdn.com//images/products/plugins/full/api-560.jpg"
                 ix-sizes="auto" style="width:316px" sizes="316px">
         </div>
     </div>
